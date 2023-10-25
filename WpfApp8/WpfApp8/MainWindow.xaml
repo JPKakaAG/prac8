@@ -21,13 +21,18 @@
         </Grid.RowDefinitions>
         <Button x:Name="btnInfo" Click="btnInfo_Click" Grid.Column="3" Content="О программе" HorizontalAlignment="Center" Margin="0,21,0,0" Grid.Row="3" VerticalAlignment="Top" Width="106"/>
         <Button x:Name="btnExit" Click="btnExit_Click" Grid.Column="3" Content="Выход" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Top" Width="106" Margin="0,54,0,0"/>
-        <Button x:Name="btnRes" Click="btnRes_Click" Grid.Column="1" Content="Решение" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="62" Width="106"/>
-        <TextBox x:Name="tbRes" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Height="62"/>
-        <TextBox x:Name="tbf" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="94" Grid.Row="1"/>
-        <Label Grid.Column="1" Content="Имя отца" HorizontalAlignment="Center" Margin="0,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="62"/>
-        <Label Grid.Column="2" Content="ФИО ребёнка" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="87"/>
-        <TextBox x:Name="tbc1" Grid.Column="2" HorizontalAlignment="Center" Margin="0,41,0,0" Grid.Row="1" TextWrapping="Wrap" Text="первый ребёнок" VerticalAlignment="Top" Width="184"/>
-        <TextBox x:Name="tbc2" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" Text="второй ребёнок" VerticalAlignment="Top" Width="184" Margin="0,64,0,0"/>
+        <Button x:Name="btnRes" Click="btnRes_Click" Content="Решение" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Top" Height="62" Width="106" Margin="0,29,0,0"/>
+        <TextBox x:Name="tbRes" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Height="99" Grid.Column="1"/>
+        <TextBox x:Name="tbf" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" Margin="50,47,0,0"/>
+        <Label Content="Имя отца" HorizontalAlignment="Left" Margin="66,21,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label Grid.Column="1" Content="ФИО ребёнка" HorizontalAlignment="Left" Margin="51,5,0,0" VerticalAlignment="Top" Width="88"/>
+        <TextBox x:Name="tbc1" Grid.Column="1" HorizontalAlignment="Left" Margin="3,30,0,0" TextWrapping="Wrap" Text="первый ребёнок" VerticalAlignment="Top" Width="184" Height="26"/>
+        <TextBox x:Name="tbc2" Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="второй ребёнок" VerticalAlignment="Top" Width="184" Margin="3,65,0,0" Height="25"/>
+        <TextBox x:Name="tbRes2" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Height="89" Grid.Row="2"/>
+        <Label Grid.Column="2" Content="- Сравнение" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="2"/>
+        <Button x:Name="btnClon" Click="btnClon_Click" Content="Клонировать" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="62" Width="106" Margin="44,0,0,0"/>
+        <Button x:Name="btnSrav" Click="btnSrav_Click" Content="Сравнить" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Height="62" Width="106" Margin="44,0,0,0"/>
+        <TextBox x:Name="tbRes3" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Height="89" Grid.Row="3"/>
 
 
     </Grid>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace WpfApp8
     public interface IPerson
     {
         string Name { get; } // Свойство "Имя"
-        void Print(); // Метод "Печать"
+        string Print(); // Метод "Печать"
     }
 
     // Реализуем класс "Отец"
@@ -22,9 +23,9 @@ namespace WpfApp8
             Name = name;
         }
 
-        public void Print()
+        public string Print()
         {
-            Console.WriteLine("Имя: " + Name);
+            return  ("Имя: " + Name);
         }
     }
 
@@ -32,19 +33,21 @@ namespace WpfApp8
     public class Child : IPerson, IComparable<Child>, ICloneable
     {
         public string Name { get; private set; } // Свойство "Имя"
+        public string Surname { get; private set; } // Свойство "Фамилия"
         public string Patronymic { get; private set; } //Свойство "Отчество"
         public Father Father { get; private set; } // Свойство "Отец"
 
-        public Child(string name, string patronymic, Father father)
+        public Child(string name, string surname, string patronymic, Father father)
         {
             Name = name;
+            Surname = surname;
             Patronymic = patronymic;
             Father = father;
         }
 
-        public void Print()
+        public string Print()
         {
-            Console.WriteLine("Имя: " + Name + ", Отчество: " + Patronymic);
+            return("Имя: " + Name + ",\r\n Отчество: " + Patronymic);
         }
 
         // Реализуем метод сравнения по фамилии
@@ -62,7 +65,7 @@ namespace WpfApp8
         // Реализуем метод клонирования
         public object Clone()
         {
-            return new Child(Name, Patronymic, Father);
+            return new Child(Name, Surname, Patronymic, Father);
         }
     }
 
