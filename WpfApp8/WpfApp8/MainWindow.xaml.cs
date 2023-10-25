@@ -57,7 +57,7 @@ namespace WpfApp8
             Child child2 = new Child(a2, b2, c2, father);
 
             // Вызываем методы объектов
-            tbRes.Text = $"{child1.Print()} \r\n {child2.Print()}";
+            tbRes.Text = $"Первый ребёнок:\r\n{child1.Print()}\r\nВторой ребёнок \r\n {child2.Print()}";
             child1.Print();
             child2.Print();
         }
@@ -82,7 +82,7 @@ namespace WpfApp8
 
             // Выполняем клонирование объекта
             Child childClone = (Child)child1.Clone();
-            tbRes3.Text = ($" Клон: {childClone.Print()}");
+            tbRes3.Text = ($" Клон:\r\n {childClone.Print()}");
         }
 
         private void btnSrav_Click(object sender, RoutedEventArgs e)
@@ -106,7 +106,7 @@ namespace WpfApp8
             // Выполняем сравнение объектов
             int result = child1.CompareTo(child2);
             string comparisonResult = result == 0 ? "равны" : result < 0 ? "меньше" : "больше";
-            tbRes2.Text = ("Сравнение: " + child1.Name + " и " + child2.Name + " - " + comparisonResult);
+            tbRes2.Text = ("Сравнение:\r\n " + child1.Name + " и " + child2.Name + " - " + comparisonResult);
         }
     }
 }
