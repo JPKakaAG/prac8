@@ -47,7 +47,7 @@ namespace WpfApp8
 
         public string Print()
         {
-            return("Имя: " + Name + ",\r\n Отчество: " + Patronymic);
+            return("Имя: " + Name + ",\r\n Фамилия:" + Surname + ", \r\n Отчество: " + Patronymic);
         }
 
         // Реализуем метод сравнения по фамилии
@@ -65,7 +65,7 @@ namespace WpfApp8
         // Реализуем метод клонирования
         public object Clone()
         {
-            return new Child(Name, Surname, Patronymic, Father);
+            return new Child(Surname, Name, Patronymic, Father);
         }
     }
 

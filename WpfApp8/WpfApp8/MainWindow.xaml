@@ -33,6 +33,8 @@
         <Button x:Name="btnClon" Click="btnClon_Click" Content="Клонировать" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Height="62" Width="106" Margin="44,0,0,0"/>
         <Button x:Name="btnSrav" Click="btnSrav_Click" Content="Сравнить" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Height="62" Width="106" Margin="44,0,0,0"/>
         <TextBox x:Name="tbRes3" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Width="176" Height="89" Grid.Row="3"/>
+        <Label Grid.Column="2" Content="- Клонирование" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="3"/>
+        <Label Grid.Column="2" Content="- Вывести ФИО" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Grid.Row="1"/>
 
 
     </Grid>
